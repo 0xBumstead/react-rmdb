@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react"
+import React, { useContext } from "react"
 import { Link } from "react-router-dom"
 // Images
 import RMDBLogo from "../../images/react-movie-logo.svg"

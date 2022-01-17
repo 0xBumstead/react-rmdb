@@ -33,6 +33,8 @@ const MovieInfo = ({ movie }) => {
 
     const handleRating = async value => {
         const rate = await API.rateMovie(user.sessionId, movieId, value)
+        console.log(rate)
+
         const accountRates = await API.fetchUserRates(
             user.sessionId,
             user.accountId

@@ -16,8 +16,10 @@ const Login = () => {
     const [password, setPassword] = useState("")
     const [error, setError] = useState("")
 
-    const [_user, setUser] = useContext(UserContext)
+    const [user, setUser] = useContext(UserContext)
     const navigate = useNavigate()
+
+    console.log(user)
 
     const handleSubmit = async () => {
         setError(false)
